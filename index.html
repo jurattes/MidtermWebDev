@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam 1</title>
+    <link href = "styles.css" rel = "stylesheet">
+</head>
+<body>
+    <main>
+        <section id = "left-container">
+            <a href = "https://www.youtube.com/watch?v=mflSKS28-88" target= "_blank"> <img src = "addressLogo.svg" alt = "Address Logo" id = "addressLogo"> </a>
+            <label for = "address">
+                <div class = "title"> LaSalle College </div>
+                <div class = "content"> 2000 Saint-Catherine St. W </div>
+            </label>
+            <img src = "phoneLogo.svg" alt = "Phone Logo" id = "phoneLogo">
+            <label for = "phone">
+                <div class = "title"> Phone</div>
+                <div class = "content"> 1-800-267-2001 </div>
+            </label>
+            <img src = "emailLogo.svg" alt = "Email Logo" id = "emailLogo">
+            <label for = "email">
+                <div class = "title"> Email </div>
+                <div class = "content"> j.pescador03@gmail.com <br> web.developer@gmail.com </div>
+            </label>
+            <img src = "wwwLogo.svg" alt = "www Logo">
+        </section>
+        <div id = "row-border"> </div>
+        <section id = "right-container">
+            <h1> EXAM1 - WEB DEVELOPING WINTER 2024 </h1>
+            <form action = "post">
+                <label for = "citySelection" id = "dateSelection"> SELECT CITY <br> </label>
+                <div class = "citySelector">
+                    <select name = "citySelection" id ="citySelect" placerholder = "Select Your City">
+                    <option> Select Your City </option>
+                    <option> Montreal </option>
+                    <option> Laval </option>
+                    <option> Longueuil </option>
+                </select>
+                </div>
+            </form>
+            <form action = "post">
+                <label for = "dateTime" id = "dateTime"> SELECT DATE AND TIME <br> </label>
+                <div class = "timedate">
+                    <input type = "date" id = "date">
+                    <input type = "time" id = "time">
+                    <label for = "visitHours" id = "visitHours"> (Note: Visiting hours are from 8am to 8pm) </label> <br> <br>
+                </div>
+            </form>
+            <form action = "post">
+                <div class = "personalDetail">
+                    <label for = "personalDetails" id = "personalDetails"> PERSONAL DETAILS <br> </label>
+                    <input type = "text" id = "fullName" placeholder = "Full Name*" required> <br>
+                    <input type = "tel" id = "mobileNumber" placeholder = "Mobile Number*" required> <br>
+                    <input type = "email" id = "email" placeholder = "Email (optional)"> <br>
+                    <textarea rows = "4" placeholder = "Type message here..." id = "tarea"></textarea>
+                </div>
+                <div>
+                    <button type = "submit" id = "submit"> Submit </button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
